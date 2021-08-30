@@ -96,6 +96,110 @@ const routes = [
             meta: { title: 'cruds.user.title' }
           }
         ]
+      },
+      {
+        path: 'basic-c-r-m',
+        name: 'basic_c_r_m',
+        component: View,
+        redirect: { name: 'crm_statuses.index' },
+        children: [
+          {
+            path: 'crm-statuses',
+            name: 'crm_statuses.index',
+            component: () => import('@cruds/CrmStatuses/Index.vue'),
+            meta: { title: 'cruds.crmStatus.title' }
+          },
+          {
+            path: 'crm-statuses/create',
+            name: 'crm_statuses.create',
+            component: () => import('@cruds/CrmStatuses/Create.vue'),
+            meta: { title: 'cruds.crmStatus.title' }
+          },
+          {
+            path: 'crm-statuses/:id',
+            name: 'crm_statuses.show',
+            component: () => import('@cruds/CrmStatuses/Show.vue'),
+            meta: { title: 'cruds.crmStatus.title' }
+          },
+          {
+            path: 'crm-statuses/:id/edit',
+            name: 'crm_statuses.edit',
+            component: () => import('@cruds/CrmStatuses/Edit.vue'),
+            meta: { title: 'cruds.crmStatus.title' }
+          },
+          {
+            path: 'crm-customers',
+            name: 'crm_customers.index',
+            component: () => import('@cruds/CrmCustomers/Index.vue'),
+            meta: { title: 'cruds.crmCustomer.title' }
+          },
+          {
+            path: 'crm-customers/create',
+            name: 'crm_customers.create',
+            component: () => import('@cruds/CrmCustomers/Create.vue'),
+            meta: { title: 'cruds.crmCustomer.title' }
+          },
+          {
+            path: 'crm-customers/:id',
+            name: 'crm_customers.show',
+            component: () => import('@cruds/CrmCustomers/Show.vue'),
+            meta: { title: 'cruds.crmCustomer.title' }
+          },
+          {
+            path: 'crm-customers/:id/edit',
+            name: 'crm_customers.edit',
+            component: () => import('@cruds/CrmCustomers/Edit.vue'),
+            meta: { title: 'cruds.crmCustomer.title' }
+          },
+          {
+            path: 'crm-notes',
+            name: 'crm_notes.index',
+            component: () => import('@cruds/CrmNotes/Index.vue'),
+            meta: { title: 'cruds.crmNote.title' }
+          },
+          {
+            path: 'crm-notes/create',
+            name: 'crm_notes.create',
+            component: () => import('@cruds/CrmNotes/Create.vue'),
+            meta: { title: 'cruds.crmNote.title' }
+          },
+          {
+            path: 'crm-notes/:id',
+            name: 'crm_notes.show',
+            component: () => import('@cruds/CrmNotes/Show.vue'),
+            meta: { title: 'cruds.crmNote.title' }
+          },
+          {
+            path: 'crm-notes/:id/edit',
+            name: 'crm_notes.edit',
+            component: () => import('@cruds/CrmNotes/Edit.vue'),
+            meta: { title: 'cruds.crmNote.title' }
+          },
+          {
+            path: 'crm-documents',
+            name: 'crm_documents.index',
+            component: () => import('@cruds/CrmDocuments/Index.vue'),
+            meta: { title: 'cruds.crmDocument.title' }
+          },
+          {
+            path: 'crm-documents/create',
+            name: 'crm_documents.create',
+            component: () => import('@cruds/CrmDocuments/Create.vue'),
+            meta: { title: 'cruds.crmDocument.title' }
+          },
+          {
+            path: 'crm-documents/:id',
+            name: 'crm_documents.show',
+            component: () => import('@cruds/CrmDocuments/Show.vue'),
+            meta: { title: 'cruds.crmDocument.title' }
+          },
+          {
+            path: 'crm-documents/:id/edit',
+            name: 'crm_documents.edit',
+            component: () => import('@cruds/CrmDocuments/Edit.vue'),
+            meta: { title: 'cruds.crmDocument.title' }
+          }
+        ]
       }
     ]
   }

@@ -58,6 +58,38 @@ export default {
               gate: 'user_access'
             }
           ]
+        },
+        {
+          title: 'cruds.basicCRM.title',
+          icon: 'table_view',
+          path: { name: 'basic_c_r_m' },
+          gate: 'basic_c_r_m_access',
+          children: [
+            {
+              title: 'cruds.crmStatus.title',
+              icon: 'table_view',
+              path: { name: 'crm_statuses.index' },
+              gate: 'crm_status_access'
+            },
+            {
+              title: 'cruds.crmCustomer.title',
+              icon: 'table_view',
+              path: { name: 'crm_customers.index' },
+              gate: 'crm_customer_access'
+            },
+            {
+              title: 'cruds.crmNote.title',
+              icon: 'table_view',
+              path: { name: 'crm_notes.index' },
+              gate: 'crm_note_access'
+            },
+            {
+              title: 'cruds.crmDocument.title',
+              icon: 'table_view',
+              path: { name: 'crm_documents.index' },
+              gate: 'crm_document_access'
+            }
+          ]
         }
       ]
     }
