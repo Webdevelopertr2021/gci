@@ -10,6 +10,14 @@ import RolesIndex from './cruds/Roles'
 import RolesSingle from './cruds/Roles/single'
 import UsersIndex from './cruds/Users'
 import UsersSingle from './cruds/Users/single'
+import CrmStatusesIndex from './cruds/CrmStatuses'
+import CrmStatusesSingle from './cruds/CrmStatuses/single'
+import CrmCustomersIndex from './cruds/CrmCustomers'
+import CrmCustomersSingle from './cruds/CrmCustomers/single'
+import CrmNotesIndex from './cruds/CrmNotes'
+import CrmNotesSingle from './cruds/CrmNotes/single'
+import CrmDocumentsIndex from './cruds/CrmDocuments'
+import CrmDocumentsSingle from './cruds/CrmDocuments/single'
 
 Vue.use(Vuex)
 
@@ -24,7 +32,15 @@ export default new Vuex.Store({
     RolesIndex,
     RolesSingle,
     UsersIndex,
-    UsersSingle
+    UsersSingle,
+    CrmStatusesIndex,
+    CrmStatusesSingle,
+    CrmCustomersIndex,
+    CrmCustomersSingle,
+    CrmNotesIndex,
+    CrmNotesSingle,
+    CrmDocumentsIndex,
+    CrmDocumentsSingle
   },
   strict: debug
 })
